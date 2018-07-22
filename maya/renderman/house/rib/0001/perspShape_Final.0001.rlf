@@ -4,7 +4,11 @@
         <Payload Id="PxrLayerSurface1SG" Label="" Source="1" Content="1"><![CDATA[##RenderMan RIB
 version 3.04
 Displacement "null" 
-Pattern "PxrLayer" "pxrDirtLayer" "int enableDiffuse" [1] "float diffuseGain" [1] "color diffuseColor" [0.18 0.18 0.18] "float diffuseRoughness" [0] "normal diffuseBumpNormal" [0 0 0] "color diffuseBackColor" [0.18 0.18 0.18] "float diffuseTransmitGain" [0] 
+Pattern "PxrManifold3D" "PxrManifold3D1" "float scale" [15] "int use" [0] "string pref" [""] "string coordsys" ["world"] "__instanceid" ["PxrManifold3D1_0"]
+Pattern "PxrFacingRatio" "PxrFacingRatio1" "int use" [1] "vector direction" [0 1 0] "string coordSys" ["world"] "int faceForward" [1] "int clamp" [1] "int invert" [0] "float gamma" [1.35] "normal bumpNormal" [0 0 0] "__instanceid" ["PxrFacingRatio1_0"]
+Pattern "PxrFractal" "PxrFractal2" "int surfacePosition" [0] "int layers" [6] "float frequency" [1] "float lacunarity" [2] "float dimension" [1] "float erosion" [0] "float variation" [0] "int turbulent" [0] "__instanceid" ["PxrFractal2_0"]
+Pattern "PxrFractal" "PxrFractal1" "int surfacePosition" [0] "int layers" [8] "float frequency" [1] "float lacunarity" [2] "float dimension" [1.25] "float erosion" [0] "float variation" [0] "int turbulent" [0] "reference struct manifold" ["PxrManifold3D1:result"] "__instanceid" ["PxrFractal1_0"]
+Pattern "PxrLayer" "pxrDirtLayer" "int enableDiffuse" [1] "reference float diffuseGain" ["PxrFractal2:resultF"] "color diffuseColor" [0.578 0.455959 0.317322] "float diffuseRoughness" [1] "normal diffuseBumpNormal" [0 0 0] "color diffuseBackColor" [0.18 0.18 0.18] "float diffuseTransmitGain" [0] 
 	"color diffuseTransmitColor" [0.18 0.18 0.18] "int enableSpecular" [0] "float specularGain" [0] "color specularFaceColor" [0 0 0] "color specularEdgeColor" [0 0 0] "float specularRoughness" [0.2] "color specularIor" [1.5 1.5 1.5] 
 	"color specularExtinctionCoeff" [0 0 0] "float specularAnisotropy" [0] "normal specularBumpNormal" [0 0 0] "int enableRoughSpecular" [0] "float roughSpecularGain" [0] "color roughSpecularFaceColor" [0 0 0] "color roughSpecularEdgeColor" [0 0 0] 
 	"float roughSpecularRoughness" [0.6] "color roughSpecularIor" [1.5 1.5 1.5] "color roughSpecularExtinctionCoeff" [0 0 0] "float roughSpecularAnisotropy" [0] "normal roughSpecularBumpNormal" [0 0 0] "int enableClearcoat" [0] "float clearcoatGain" [0] 
@@ -16,9 +20,7 @@ Pattern "PxrLayer" "pxrDirtLayer" "int enableDiffuse" [1] "float diffuseGain" [1
 	"float singlescatterMfp" [10] "color singlescatterMfpColor" [0.851 0.557 0.395] "float singlescatterDirectionality" [0] "float singlescatterIor" [1.3] "float singlescatterBlur" [0] "float singlescatterDirectGain" [0] "color singlescatterDirectGainTint" [1 1 1] "int enableRR" [0] "float rrRefractionGain" [0] 
 	"float rrReflectionGain" [0] "color rrRefractionColor" [1 1 1] "float rrRoughness" [0.1] "float rrIor" [1.5] "int enableGlow" [0] "float glowGain" [0] "color glowColor" [1 1 1] "normal bumpNormal" [0 0 0] 
 	"__instanceid" ["pxrDirtLayer_0"]
-Pattern "PxrManifold3D" "PxrManifold3D1" "float scale" [15] "int use" [0] "string pref" [""] "string coordsys" ["world"] "__instanceid" ["PxrManifold3D1_0"]
-Pattern "PxrFractal" "PxrFractal1" "int surfacePosition" [0] "int layers" [8] "float frequency" [1] "float lacunarity" [2] "float dimension" [1.35] "float erosion" [0] "float variation" [0] "int turbulent" [0] "reference struct manifold" ["PxrManifold3D1:result"] "__instanceid" ["PxrFractal1_0"]
-Pattern "PxrRemap" "PxrRemap1" "reference color inputRGB" ["PxrFractal1:resultRGB"] "float inputMin" [0] "float inputMax" [1] "int clampInput" [1] "color bias" [0.5 0.5 0.5] "color gain" [0.449664 0.449664 0.449664] "float outputMin" [0] "float outputMax" [1] "int clampOutput" [1] "__instanceid" ["PxrRemap1_0"]
+Pattern "PxrRemap" "PxrRemap1" "reference color inputRGB" ["PxrFractal1:resultRGB"] "float inputMin" [0] "float inputMax" [1] "int clampInput" [1] "color bias" [0.744966 0.744966 0.744966] "color gain" [0.449664 0.449664 0.449664] "float outputMin" [0] "float outputMax" [1] "int clampOutput" [1] "__instanceid" ["PxrRemap1_0"]
 Pattern "PxrLayer" "prxStoneLayer" "int enableDiffuse" [1] "reference float diffuseGain" ["PxrRemap1:resultR"] "color diffuseColor" [0.872 0.663841 0.42728] "float diffuseRoughness" [0] "normal diffuseBumpNormal" [0 0 0] "color diffuseBackColor" [0.18 0.18 0.18] "float diffuseTransmitGain" [0] 
 	"color diffuseTransmitColor" [0.18 0.18 0.18] "int enableSpecular" [0] "float specularGain" [0] "color specularFaceColor" [0 0 0] "color specularEdgeColor" [0 0 0] "float specularRoughness" [0.2] "color specularIor" [1.5 1.5 1.5] 
 	"color specularExtinctionCoeff" [0 0 0] "float specularAnisotropy" [0] "normal specularBumpNormal" [0 0 0] "int enableRoughSpecular" [0] "float roughSpecularGain" [0] "color roughSpecularFaceColor" [0 0 0] "color roughSpecularEdgeColor" [0 0 0] 
@@ -84,8 +86,8 @@ Pattern "PxrLayerMixer" "PxrLayerMixer1" "normal baselayer_bumpNormal" [0 0 0] "
 	"color layer4_refractionColor" [1 1 1] "float layer4_reflectionGain" [0] "float layer4_glassRoughness" [0.1] "float layer4_glassIor" [1.5] "int layer4_enableSubsurface" [0] "float layer4_subsurfaceGain" [0] "color layer4_subsurfaceColor" [0 0 0] "float layer4_subsurfaceDmfp" [1] "color layer4_subsurfaceDmfpColor" [1 1 1] 
 	"float layer4_shortSubsurfaceGain" [0] "color layer4_shortSubsurfaceColor" [0 0 0] "float layer4_shortSubsurfaceDmfp" [1] "float layer4_longSubsurfaceGain" [0] "color layer4_longSubsurfaceColor" [0 0 0] "float layer4_longSubsurfaceDmfp" [1] "color layer4_subsurfacePostTint" [1 1 1] 
 	"float layer4_subsurfaceTransmitGain" [0] "int layer4_enableSinglescatter" [0] "float layer4_singlescatterGain" [0] "color layer4_singlescatterColor" [0 0 0] "float layer4_singlescatterMfp" [1] "color layer4_singlescatterMfpColor" [1 1 1] "float layer4_singlescatterDirectionality" [0] "float layer4_singlescatterIor" [0] "float layer4_singlescatterBlur" [0] 
-	"float layer4_singlescatterDirectGain" [0] "color layer4_singlescatterDirectGainTint" [1 1 1] "int layer4_enableGlow" [0] "float layer4_glowGain" [0] "color layer4_glowColor" [0 0 0] "int layer1Enabled" [0] "float layer1Mask" [1] "int layer2Enabled" [0] "float layer2Mask" [1] "int layer3Enabled" [0] 
-	"float layer3Mask" [1] "int layer4Enabled" [0] "float layer4Mask" [1] "__instanceid" ["PxrLayerMixer1_0"]
+	"float layer4_singlescatterDirectGain" [0] "color layer4_singlescatterDirectGainTint" [1 1 1] "int layer4_enableGlow" [0] "float layer4_glowGain" [0] "color layer4_glowColor" [0 0 0] "int layer1Enabled" [1] "reference float layer1Mask" ["PxrFacingRatio1:resultF"] "int layer2Enabled" [0] "float layer2Mask" [1] "int layer3Enabled" [0] "float layer3Mask" [1] 
+	"int layer4Enabled" [0] "float layer4Mask" [1] "__instanceid" ["PxrLayerMixer1_0"]
 Bxdf "PxrLayerSurface" "layerSurfaceRock" "reference float diffuseGain" ["PxrLayerMixer1:pxrMaterialOut_diffuseGain"] "reference color diffuseColor" ["PxrLayerMixer1:pxrMaterialOut_diffuseColor"] "reference float diffuseRoughness" ["PxrLayerMixer1:pxrMaterialOut_diffuseRoughness"] "float diffuseExponent" [1] "normal diffuseBumpNormal" [0 0 0] "int diffuseDoubleSided" [0] "int diffuseBackUseDiffuseColor" [1] "reference color diffuseBackColor" ["PxrLayerMixer1:pxrMaterialOut_diffuseBackColor"] "reference float diffuseTransmitGain" ["PxrLayerMixer1:pxrMaterialOut_diffuseTransmitGain"] "reference color diffuseTransmitColor" ["PxrLayerMixer1:pxrMaterialOut_diffuseTransmitColor"] "int specularFresnelMode" [0] "color specularFaceColor" [0 0 0] "color specularEdgeColor" [0 0 0] 
 	"float specularFresnelShape" [5] "color specularIor" [1.5 1.5 1.5] "color specularExtinctionCoeff" [0 0 0] "float specularRoughness" [0.2] "int specularModelType" [0] "float specularAnisotropy" [0] "vector specularAnisotropyDirection" [0 0 0] 
 	"normal specularBumpNormal" [0 0 0] "int specularDoubleSided" [0] "int roughSpecularFresnelMode" [0] "color roughSpecularFaceColor" [0 0 0] "color roughSpecularEdgeColor" [0 0 0] "float roughSpecularFresnelShape" [5] "color roughSpecularIor" [1.5 1.5 1.5] 
@@ -188,9 +190,9 @@ Bxdf "PxrSurface" "houseShader" "float diffuseGain" [1] "color diffuseColor" [1 
         <Binding Key="house/stones/stone_3/stone_Shape3" PayloadId="PxrLayerSurface1SG"/>
         <Binding Key="house/stones/stone_5/stone_Shape5" PayloadId="PxrLayerSurface1SG"/>
         <Binding Key="house/stones/stone_7/stone_Shape7" PayloadId="PxrLayerSurface1SG"/>
-        <Binding Key="pCylinder2/pCylinderShape2" PayloadId="PxrSurface3SG"/>
         <Binding Key="house/stones/stone_11/stone_Shape11" PayloadId="PxrLayerSurface1SG"/>
         <Binding Key="house/houseRoof/houseRoofShape" PayloadId="PxrSurface3SG"/>
-        <Binding Key="pCylinder1/pCylinderShape1" PayloadId="PxrSurface1SG"/>
+        <Binding Key="house/chimney/chimneyTop/chimneyTopShape" PayloadId="PxrSurface3SG"/>
+        <Binding Key="house/chimney/chimneyBase/chimneyBaseShape" PayloadId="PxrSurface1SG"/>
     </TightBindings>
 </RenderManLookFile>
