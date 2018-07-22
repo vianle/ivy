@@ -1,0 +1,16 @@
+shot_00.ma
+--->set.ma (reference)
+------>house.ma (reference)
+------>environment.ma (reference)
+------>foliage.ma (reference)
+--------->foliage_geos.ma (reference)
+------>set_lights (set)
+
+--->girl.ma (reference)
+------> (UP TO VI/OLIVER)
+
+--->ivy.ma (reference)
+------> (WILL FIGURE THIS OUT)
+
+shot_00_lights (per scene)
+shot_00_cameras (per scene)

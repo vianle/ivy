@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
-//Name: scene_placeholder.ma
-//Last modified: Sat, Jul 21, 2018 08:49:33 PM
+//Name: set.ma
+//Last modified: Sat, Jul 21, 2018 08:49:47 PM
 //Codeset: 1252
 requires maya "2018";
 requires -nodeType "polyDisc" "modelingToolkit" "0.0.0.0";
@@ -5919,4 +5919,4 @@ connectAttr "pCubeShape11.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pSphereShape17.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape12.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape13.iog" ":initialShadingGroup.dsm" -na;
-// End of scene_placeholder.ma
+// End of set.ma
