@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<RenderManLookFile Version="1" Format="RenderMan Look Data" AssemblyName="perspShape_Final">
+    <InjectablePayloads>
+        <Payload Id="initialShadingGroup" Label="" Source="1" Content="1"><![CDATA[##RenderMan RIB
+version 3.04
+Displacement "null" 
+]]></Payload>
+        <Payload Id="PxrSurface3SG" Label="" Source="1" Content="1"><![CDATA[##RenderMan RIB
+version 3.04
+Displacement "null" 
+Bxdf "PxrSurface" "PxrSurface3" "float diffuseGain" [1] "color diffuseColor" [1 0.941176 0.765] "float diffuseRoughness" [0] "float diffuseExponent" [1] "normal diffuseBumpNormal" [0 0 0] "int diffuseDoubleSided" [0] "int diffuseBackUseDiffuseColor" [1] "color diffuseBackColor" [0.18 0.18 0.18] 
+	"float diffuseTransmitGain" [0] "color diffuseTransmitColor" [0.18 0.18 0.18] "int specularFresnelMode" [0] "color specularFaceColor" [0 0 0] "color specularEdgeColor" [0 0 0] "float specularFresnelShape" [5] "color specularIor" [1.5 1.5 1.5] 
+	"color specularExtinctionCoeff" [0 0 0] "float specularRoughness" [0.2] "int specularModelType" [0] "float specularAnisotropy" [0] "vector specularAnisotropyDirection" [0 0 0] "normal specularBumpNormal" [0 0 0] "int specularDoubleSided" [0] 
+	"int roughSpecularFresnelMode" [0] "color roughSpecularFaceColor" [0 0 0] "color roughSpecularEdgeColor" [0 0 0] "float roughSpecularFresnelShape" [5] "color roughSpecularIor" [1.5 1.5 1.5] "color roughSpecularExtinctionCoeff" [0 0 0] 
+	"float roughSpecularRoughness" [0.6] "int roughSpecularModelType" [0] "float roughSpecularAnisotropy" [0] "vector roughSpecularAnisotropyDirection" [0 0 0] "normal roughSpecularBumpNormal" [0 0 0] "int roughSpecularDoubleSided" [0] "int clearcoatFresnelMode" [0] "color clearcoatFaceColor" [0 0 0] 
+	"color clearcoatEdgeColor" [0 0 0] "float clearcoatFresnelShape" [5] "color clearcoatIor" [1.5 1.5 1.5] "color clearcoatExtinctionCoeff" [0 0 0] "float clearcoatThickness" [0] "color clearcoatAbsorptionTint" [0 0 0] 
+	"float clearcoatRoughness" [0] "int clearcoatModelType" [0] "float clearcoatAnisotropy" [0] "vector clearcoatAnisotropyDirection" [0 0 0] "normal clearcoatBumpNormal" [0 0 0] "int clearcoatDoubleSided" [0] "float specularEnergyCompensation" [0] "float clearcoatEnergyCompensation" [0] "float iridescenceFaceGain" [0] 
+	"float iridescenceEdgeGain" [0] "float iridescenceFresnelShape" [5] "int iridescenceMode" [0] "color iridescencePrimaryColor" [1 0 0] "color iridescenceSecondaryColor" [0 0 1] "float iridescenceRoughness" [0.2] "float iridescenceCurve" [1] "float iridescenceScale" [1] "int iridescenceFlip" [0] 
+	"float iridescenceThickness" [800] "int iridescenceDoubleSided" [0] "float fuzzGain" [0] "color fuzzColor" [1 1 1] "float fuzzConeAngle" [8] "normal fuzzBumpNormal" [0 0 0] "int fuzzDoubleSided" [0] "int subsurfaceType" [0] "float subsurfaceGain" [0] "color subsurfaceColor" [0.83 0.791 0.753] 
+	"float subsurfaceDmfp" [10] "color subsurfaceDmfpColor" [0.851 0.557 0.395] "float shortSubsurfaceGain" [0] "color shortSubsurfaceColor" [0.9 0.9 0.9] "float shortSubsurfaceDmfp" [5] "float longSubsurfaceGain" [0] "color longSubsurfaceColor" [0.8 0 0] 
+	"float longSubsurfaceDmfp" [20] "float subsurfaceDirectionality" [0] "float subsurfaceBleed" [0] "float subsurfaceDiffuseBlend" [0] "int subsurfaceResolveSelfIntersections" [0] "float subsurfaceIor" [1] "color subsurfacePostTint" [1 1 1] "float subsurfaceDiffuseSwitch" [1] "int subsurfaceDoubleSided" [0] "float subsurfaceTransmitGain" [0] "int considerBackside" [1] "int continuationRayMode" [0] 
+	"int maxContinuationHits" [2] "float followTopology" [0] "string subsurfaceSubset" [""] "float singlescatterGain" [0] "color singlescatterColor" [0.83 0.791 0.753] "float singlescatterMfp" [10] "color singlescatterMfpColor" [0.851 0.557 0.395] "float singlescatterDirectionality" [0] "float singlescatterIor" [1.3] 
+	"float singlescatterBlur" [0] "float singlescatterDirectGain" [0] "color singlescatterDirectGainTint" [1 1 1] "int singlescatterDoubleSided" [0] "int singlescatterConsiderBackside" [1] "int singlescatterContinuationRayMode" [0] "int singlescatterMaxContinuationHits" [2] "int singlescatterDirectGainMode" [0] "string singlescatterSubset" [""] "color irradianceTint" [1 1 1] "float irradianceRoughness" [0] 
+	"float unitLength" [0.1] "float refractionGain" [0] "float reflectionGain" [0] "color refractionColor" [1 1 1] "float glassRoughness" [0.1] "float glassIor" [1.5] "int thinGlass" [0] "int ignoreAccumOpacity" [0] "color ssAlbedo" [0 0 0] 
+	"color extinction" [0 0 0] "float g" [0] "int multiScatter" [0] "int enableOverlappingVolumes" [0] "float glowGain" [0] "color glowColor" [1 1 1] "normal bumpNormal" [0 0 0] 
+	"color shadowColor" [0 0 0] "int shadowMode" [0] "float presence" [1] "int presenceCached" [1] "__instanceid" ["PxrSurface3_0"]
+]]></Payload>
+        <Payload Id="house:PxrSurface2SG" Label="" Source="1" Content="1"><![CDATA[##RenderMan RIB
+version 3.04
+Displacement "null" 
+Bxdf "PxrSurface" "house_stoneShader" "float diffuseGain" [1] "color diffuseColor" [0.872 0.672004 0.44472] "float diffuseRoughness" [0] "float diffuseExponent" [1] "normal diffuseBumpNormal" [0 0 0] "int diffuseDoubleSided" [0] "int diffuseBackUseDiffuseColor" [1] "color diffuseBackColor" [0.18 0.18 0.18] 
+	"float diffuseTransmitGain" [0] "color diffuseTransmitColor" [0.18 0.18 0.18] "int specularFresnelMode" [0] "color specularFaceColor" [0 0 0] "color specularEdgeColor" [0 0 0] "float specularFresnelShape" [5] "color specularIor" [1.5 1.5 1.5] 
+	"color specularExtinctionCoeff" [0 0 0] "float specularRoughness" [0.2] "int specularModelType" [0] "float specularAnisotropy" [0] "vector specularAnisotropyDirection" [0 0 0] "normal specularBumpNormal" [0 0 0] "int specularDoubleSided" [0] 
+	"int roughSpecularFresnelMode" [0] "color roughSpecularFaceColor" [0 0 0] "color roughSpecularEdgeColor" [0 0 0] "float roughSpecularFresnelShape" [5] "color roughSpecularIor" [1.5 1.5 1.5] "color roughSpecularExtinctionCoeff" [0 0 0] 
+	"float roughSpecularRoughness" [0.6] "int roughSpecularModelType" [0] "float roughSpecularAnisotropy" [0] "vector roughSpecularAnisotropyDirection" [0 0 0] "normal roughSpecularBumpNormal" [0 0 0] "int roughSpecularDoubleSided" [0] "int clearcoatFresnelMode" [0] "color clearcoatFaceColor" [0 0 0] 
+	"color clearcoatEdgeColor" [0 0 0] "float clearcoatFresnelShape" [5] "color clearcoatIor" [1.5 1.5 1.5] "color clearcoatExtinctionCoeff" [0 0 0] "float clearcoatThickness" [0] "color clearcoatAbsorptionTint" [0 0 0] 
+	"float clearcoatRoughness" [0] "int clearcoatModelType" [0] "float clearcoatAnisotropy" [0] "vector clearcoatAnisotropyDirection" [0 0 0] "normal clearcoatBumpNormal" [0 0 0] "int clearcoatDoubleSided" [0] "float specularEnergyCompensation" [0] "float clearcoatEnergyCompensation" [0] "float iridescenceFaceGain" [0] 
+	"float iridescenceEdgeGain" [0] "float iridescenceFresnelShape" [5] "int iridescenceMode" [0] "color iridescencePrimaryColor" [1 0 0] "color iridescenceSecondaryColor" [0 0 1] "float iridescenceRoughness" [0.2] "float iridescenceCurve" [1] "float iridescenceScale" [1] "int iridescenceFlip" [0] 
+	"float iridescenceThickness" [800] "int iridescenceDoubleSided" [0] "float fuzzGain" [0] "color fuzzColor" [1 1 1] "float fuzzConeAngle" [8] "normal fuzzBumpNormal" [0 0 0] "int fuzzDoubleSided" [0] "int subsurfaceType" [0] "float subsurfaceGain" [0] "color subsurfaceColor" [0.83 0.791 0.753] 
+	"float subsurfaceDmfp" [10] "color subsurfaceDmfpColor" [0.851 0.557 0.395] "float shortSubsurfaceGain" [0] "color shortSubsurfaceColor" [0.9 0.9 0.9] "float shortSubsurfaceDmfp" [5] "float longSubsurfaceGain" [0] "color longSubsurfaceColor" [0.8 0 0] 
+	"float longSubsurfaceDmfp" [20] "float subsurfaceDirectionality" [0] "float subsurfaceBleed" [0] "float subsurfaceDiffuseBlend" [0] "int subsurfaceResolveSelfIntersections" [0] "float subsurfaceIor" [1] "color subsurfacePostTint" [1 1 1] "float subsurfaceDiffuseSwitch" [1] "int subsurfaceDoubleSided" [0] "float subsurfaceTransmitGain" [0] "int considerBackside" [1] "int continuationRayMode" [0] 
+	"int maxContinuationHits" [2] "float followTopology" [0] "string subsurfaceSubset" [""] "float singlescatterGain" [0] "color singlescatterColor" [0.83 0.791 0.753] "float singlescatterMfp" [10] "color singlescatterMfpColor" [0.851 0.557 0.395] "float singlescatterDirectionality" [0] "float singlescatterIor" [1.3] 
+	"float singlescatterBlur" [0] "float singlescatterDirectGain" [0] "color singlescatterDirectGainTint" [1 1 1] "int singlescatterDoubleSided" [0] "int singlescatterConsiderBackside" [1] "int singlescatterContinuationRayMode" [0] "int singlescatterMaxContinuationHits" [2] "int singlescatterDirectGainMode" [0] "string singlescatterSubset" [""] "color irradianceTint" [1 1 1] "float irradianceRoughness" [0] 
+	"float unitLength" [0.1] "float refractionGain" [0] "float reflectionGain" [0] "color refractionColor" [1 1 1] "float glassRoughness" [0.1] "float glassIor" [1.5] "int thinGlass" [0] "int ignoreAccumOpacity" [0] "color ssAlbedo" [0 0 0] 
+	"color extinction" [0 0 0] "float g" [0] "int multiScatter" [0] "int enableOverlappingVolumes" [0] "float glowGain" [0] "color glowColor" [1 1 1] "normal bumpNormal" [0 0 0] 
+	"color shadowColor" [0 0 0] "int shadowMode" [0] "float presence" [1] "int presenceCached" [1] "__instanceid" ["house_stoneShader_0"]
+]]></Payload>
+        <Payload Id="PxrSurface2SG" Label="" Source="1" Content="1"><![CDATA[##RenderMan RIB
+version 3.04
+Displacement "null" 
+Bxdf "PxrSurface" "bushShader" "float diffuseGain" [1] "color diffuseColor" [0.142325 0.193 0.030301] "float diffuseRoughness" [0] "float diffuseExponent" [1] "normal diffuseBumpNormal" [0 0 0] "int diffuseDoubleSided" [0] "int diffuseBackUseDiffuseColor" [1] "color diffuseBackColor" [0.18 0.18 0.18] 
+	"float diffuseTransmitGain" [0] "color diffuseTransmitColor" [0.18 0.18 0.18] "int specularFresnelMode" [0] "color specularFaceColor" [0 0 0] "color specularEdgeColor" [0 0 0] "float specularFresnelShape" [5] "color specularIor" [1.5 1.5 1.5] 
+	"color specularExtinctionCoeff" [0 0 0] "float specularRoughness" [0.2] "int specularModelType" [0] "float specularAnisotropy" [0] "vector specularAnisotropyDirection" [0 0 0] "normal specularBumpNormal" [0 0 0] "int specularDoubleSided" [0] 
+	"int roughSpecularFresnelMode" [0] "color roughSpecularFaceColor" [0 0 0] "color roughSpecularEdgeColor" [0 0 0] "float roughSpecularFresnelShape" [5] "color roughSpecularIor" [1.5 1.5 1.5] "color roughSpecularExtinctionCoeff" [0 0 0] 
+	"float roughSpecularRoughness" [0.6] "int roughSpecularModelType" [0] "float roughSpecularAnisotropy" [0] "vector roughSpecularAnisotropyDirection" [0 0 0] "normal roughSpecularBumpNormal" [0 0 0] "int roughSpecularDoubleSided" [0] "int clearcoatFresnelMode" [0] "color clearcoatFaceColor" [0 0 0] 
+	"color clearcoatEdgeColor" [0 0 0] "float clearcoatFresnelShape" [5] "color clearcoatIor" [1.5 1.5 1.5] "color clearcoatExtinctionCoeff" [0 0 0] "float clearcoatThickness" [0] "color clearcoatAbsorptionTint" [0 0 0] 
+	"float clearcoatRoughness" [0] "int clearcoatModelType" [0] "float clearcoatAnisotropy" [0] "vector clearcoatAnisotropyDirection" [0 0 0] "normal clearcoatBumpNormal" [0 0 0] "int clearcoatDoubleSided" [0] "float specularEnergyCompensation" [0] "float clearcoatEnergyCompensation" [0] "float iridescenceFaceGain" [0] 
+	"float iridescenceEdgeGain" [0] "float iridescenceFresnelShape" [5] "int iridescenceMode" [0] "color iridescencePrimaryColor" [1 0 0] "color iridescenceSecondaryColor" [0 0 1] "float iridescenceRoughness" [0.2] "float iridescenceCurve" [1] "float iridescenceScale" [1] "int iridescenceFlip" [0] 
+	"float iridescenceThickness" [800] "int iridescenceDoubleSided" [0] "float fuzzGain" [0] "color fuzzColor" [1 1 1] "float fuzzConeAngle" [8] "normal fuzzBumpNormal" [0 0 0] "int fuzzDoubleSided" [0] "int subsurfaceType" [0] "float subsurfaceGain" [0] "color subsurfaceColor" [0.83 0.791 0.753] 
+	"float subsurfaceDmfp" [10] "color subsurfaceDmfpColor" [0.851 0.557 0.395] "float shortSubsurfaceGain" [0] "color shortSubsurfaceColor" [0.9 0.9 0.9] "float shortSubsurfaceDmfp" [5] "float longSubsurfaceGain" [0] "color longSubsurfaceColor" [0.8 0 0] 
+	"float longSubsurfaceDmfp" [20] "float subsurfaceDirectionality" [0] "float subsurfaceBleed" [0] "float subsurfaceDiffuseBlend" [0] "int subsurfaceResolveSelfIntersections" [0] "float subsurfaceIor" [1] "color subsurfacePostTint" [1 1 1] "float subsurfaceDiffuseSwitch" [1] "int subsurfaceDoubleSided" [0] "float subsurfaceTransmitGain" [0] "int considerBackside" [1] "int continuationRayMode" [0] 
+	"int maxContinuationHits" [2] "float followTopology" [0] "string subsurfaceSubset" [""] "float singlescatterGain" [0] "color singlescatterColor" [0.83 0.791 0.753] "float singlescatterMfp" [10] "color singlescatterMfpColor" [0.851 0.557 0.395] "float singlescatterDirectionality" [0] "float singlescatterIor" [1.3] 
+	"float singlescatterBlur" [0] "float singlescatterDirectGain" [0] "color singlescatterDirectGainTint" [1 1 1] "int singlescatterDoubleSided" [0] "int singlescatterConsiderBackside" [1] "int singlescatterContinuationRayMode" [0] "int singlescatterMaxContinuationHits" [2] "int singlescatterDirectGainMode" [0] "string singlescatterSubset" [""] "color irradianceTint" [1 1 1] "float irradianceRoughness" [0] 
+	"float unitLength" [0.1] "float refractionGain" [0] "float reflectionGain" [0] "color refractionColor" [1 1 1] "float glassRoughness" [0.1] "float glassIor" [1.5] "int thinGlass" [0] "int ignoreAccumOpacity" [0] "color ssAlbedo" [0 0 0] 
+	"color extinction" [0 0 0] "float g" [0] "int multiScatter" [0] "int enableOverlappingVolumes" [0] "float glowGain" [0] "color glowColor" [1 1 1] "normal bumpNormal" [0 0 0] 
+	"color shadowColor" [0 0 0] "int shadowMode" [0] "float presence" [1] "int presenceCached" [1] "__instanceid" ["bushShader_0"]
+]]></Payload>
+        <Payload Id="house:PxrSurface1SG" Label="" Source="1" Content="1"><![CDATA[##RenderMan RIB
+version 3.04
+Displacement "null" 
+Bxdf "PxrSurface" "house_houseShader" "float diffuseGain" [1] "color diffuseColor" [1 0.682 0.17] "float diffuseRoughness" [0] "float diffuseExponent" [1] "normal diffuseBumpNormal" [0 0 0] "int diffuseDoubleSided" [0] "int diffuseBackUseDiffuseColor" [1] "color diffuseBackColor" [0.18 0.18 0.18] 
+	"float diffuseTransmitGain" [0] "color diffuseTransmitColor" [0.18 0.18 0.18] "int specularFresnelMode" [0] "color specularFaceColor" [0 0 0] "color specularEdgeColor" [0 0 0] "float specularFresnelShape" [5] "color specularIor" [1.5 1.5 1.5] 
+	"color specularExtinctionCoeff" [0 0 0] "float specularRoughness" [0.2] "int specularModelType" [0] "float specularAnisotropy" [0] "vector specularAnisotropyDirection" [0 0 0] "normal specularBumpNormal" [0 0 0] "int specularDoubleSided" [0] 
+	"int roughSpecularFresnelMode" [0] "color roughSpecularFaceColor" [0 0 0] "color roughSpecularEdgeColor" [0 0 0] "float roughSpecularFresnelShape" [5] "color roughSpecularIor" [1.5 1.5 1.5] "color roughSpecularExtinctionCoeff" [0 0 0] 
+	"float roughSpecularRoughness" [0.6] "int roughSpecularModelType" [0] "float roughSpecularAnisotropy" [0] "vector roughSpecularAnisotropyDirection" [0 0 0] "normal roughSpecularBumpNormal" [0 0 0] "int roughSpecularDoubleSided" [0] "int clearcoatFresnelMode" [0] "color clearcoatFaceColor" [0 0 0] 
+	"color clearcoatEdgeColor" [0 0 0] "float clearcoatFresnelShape" [5] "color clearcoatIor" [1.5 1.5 1.5] "color clearcoatExtinctionCoeff" [0 0 0] "float clearcoatThickness" [0] "color clearcoatAbsorptionTint" [0 0 0] 
+	"float clearcoatRoughness" [0] "int clearcoatModelType" [0] "float clearcoatAnisotropy" [0] "vector clearcoatAnisotropyDirection" [0 0 0] "normal clearcoatBumpNormal" [0 0 0] "int clearcoatDoubleSided" [0] "float specularEnergyCompensation" [0] "float clearcoatEnergyCompensation" [0] "float iridescenceFaceGain" [0] 
+	"float iridescenceEdgeGain" [0] "float iridescenceFresnelShape" [5] "int iridescenceMode" [0] "color iridescencePrimaryColor" [1 0 0] "color iridescenceSecondaryColor" [0 0 1] "float iridescenceRoughness" [0.2] "float iridescenceCurve" [1] "float iridescenceScale" [1] "int iridescenceFlip" [0] 
+	"float iridescenceThickness" [800] "int iridescenceDoubleSided" [0] "float fuzzGain" [0] "color fuzzColor" [1 1 1] "float fuzzConeAngle" [8] "normal fuzzBumpNormal" [0 0 0] "int fuzzDoubleSided" [0] "int subsurfaceType" [0] "float subsurfaceGain" [0] "color subsurfaceColor" [0.83 0.791 0.753] 
+	"float subsurfaceDmfp" [10] "color subsurfaceDmfpColor" [0.851 0.557 0.395] "float shortSubsurfaceGain" [0] "color shortSubsurfaceColor" [0.9 0.9 0.9] "float shortSubsurfaceDmfp" [5] "float longSubsurfaceGain" [0] "color longSubsurfaceColor" [0.8 0 0] 
+	"float longSubsurfaceDmfp" [20] "float subsurfaceDirectionality" [0] "float subsurfaceBleed" [0] "float subsurfaceDiffuseBlend" [0] "int subsurfaceResolveSelfIntersections" [0] "float subsurfaceIor" [1] "color subsurfacePostTint" [1 1 1] "float subsurfaceDiffuseSwitch" [1] "int subsurfaceDoubleSided" [0] "float subsurfaceTransmitGain" [0] "int considerBackside" [1] "int continuationRayMode" [0] 
+	"int maxContinuationHits" [2] "float followTopology" [0] "string subsurfaceSubset" [""] "float singlescatterGain" [0] "color singlescatterColor" [0.83 0.791 0.753] "float singlescatterMfp" [10] "color singlescatterMfpColor" [0.851 0.557 0.395] "float singlescatterDirectionality" [0] "float singlescatterIor" [1.3] 
+	"float singlescatterBlur" [0] "float singlescatterDirectGain" [0] "color singlescatterDirectGainTint" [1 1 1] "int singlescatterDoubleSided" [0] "int singlescatterConsiderBackside" [1] "int singlescatterContinuationRayMode" [0] "int singlescatterMaxContinuationHits" [2] "int singlescatterDirectGainMode" [0] "string singlescatterSubset" [""] "color irradianceTint" [1 1 1] "float irradianceRoughness" [0] 
+	"float unitLength" [0.1] "float refractionGain" [0] "float reflectionGain" [0] "color refractionColor" [1 1 1] "float glassRoughness" [0.1] "float glassIor" [1.5] "int thinGlass" [0] "int ignoreAccumOpacity" [0] "color ssAlbedo" [0 0 0] 
+	"color extinction" [0 0 0] "float g" [0] "int multiScatter" [0] "int enableOverlappingVolumes" [0] "float glowGain" [0] "color glowColor" [1 1 1] "normal bumpNormal" [0 0 0] 
+	"color shadowColor" [0 0 0] "int shadowMode" [0] "float presence" [1] "int presenceCached" [1] "__instanceid" ["house_houseShader_0"]
+]]></Payload>
+        <Payload Id="PxrSurface1SG" Label="" Source="1" Content="1"><![CDATA[##RenderMan RIB
+version 3.04
+Displacement "null" 
+Bxdf "PxrSurface" "floorShader" "float diffuseGain" [1] "color diffuseColor" [0.414708 0.504 0.217224] "float diffuseRoughness" [0] "float diffuseExponent" [1] "normal diffuseBumpNormal" [0 0 0] "int diffuseDoubleSided" [0] "int diffuseBackUseDiffuseColor" [1] "color diffuseBackColor" [0.18 0.18 0.18] 
+	"float diffuseTransmitGain" [0] "color diffuseTransmitColor" [0.18 0.18 0.18] "int specularFresnelMode" [0] "color specularFaceColor" [0 0 0] "color specularEdgeColor" [0 0 0] "float specularFresnelShape" [5] "color specularIor" [1.5 1.5 1.5] 
+	"color specularExtinctionCoeff" [0 0 0] "float specularRoughness" [0.2] "int specularModelType" [0] "float specularAnisotropy" [0] "vector specularAnisotropyDirection" [0 0 0] "normal specularBumpNormal" [0 0 0] "int specularDoubleSided" [0] 
+	"int roughSpecularFresnelMode" [0] "color roughSpecularFaceColor" [0 0 0] "color roughSpecularEdgeColor" [0 0 0] "float roughSpecularFresnelShape" [5] "color roughSpecularIor" [1.5 1.5 1.5] "color roughSpecularExtinctionCoeff" [0 0 0] 
+	"float roughSpecularRoughness" [0.6] "int roughSpecularModelType" [0] "float roughSpecularAnisotropy" [0] "vector roughSpecularAnisotropyDirection" [0 0 0] "normal roughSpecularBumpNormal" [0 0 0] "int roughSpecularDoubleSided" [0] "int clearcoatFresnelMode" [0] "color clearcoatFaceColor" [0 0 0] 
+	"color clearcoatEdgeColor" [0 0 0] "float clearcoatFresnelShape" [5] "color clearcoatIor" [1.5 1.5 1.5] "color clearcoatExtinctionCoeff" [0 0 0] "float clearcoatThickness" [0] "color clearcoatAbsorptionTint" [0 0 0] 
+	"float clearcoatRoughness" [0] "int clearcoatModelType" [0] "float clearcoatAnisotropy" [0] "vector clearcoatAnisotropyDirection" [0 0 0] "normal clearcoatBumpNormal" [0 0 0] "int clearcoatDoubleSided" [0] "float specularEnergyCompensation" [0] "float clearcoatEnergyCompensation" [0] "float iridescenceFaceGain" [0] 
+	"float iridescenceEdgeGain" [0] "float iridescenceFresnelShape" [5] "int iridescenceMode" [0] "color iridescencePrimaryColor" [1 0 0] "color iridescenceSecondaryColor" [0 0 1] "float iridescenceRoughness" [0.2] "float iridescenceCurve" [1] "float iridescenceScale" [1] "int iridescenceFlip" [0] 
+	"float iridescenceThickness" [800] "int iridescenceDoubleSided" [0] "float fuzzGain" [0] "color fuzzColor" [1 1 1] "float fuzzConeAngle" [8] "normal fuzzBumpNormal" [0 0 0] "int fuzzDoubleSided" [0] "int subsurfaceType" [0] "float subsurfaceGain" [0] "color subsurfaceColor" [0.83 0.791 0.753] 
+	"float subsurfaceDmfp" [10] "color subsurfaceDmfpColor" [0.851 0.557 0.395] "float shortSubsurfaceGain" [0] "color shortSubsurfaceColor" [0.9 0.9 0.9] "float shortSubsurfaceDmfp" [5] "float longSubsurfaceGain" [0] "color longSubsurfaceColor" [0.8 0 0] 
+	"float longSubsurfaceDmfp" [20] "float subsurfaceDirectionality" [0] "float subsurfaceBleed" [0] "float subsurfaceDiffuseBlend" [0] "int subsurfaceResolveSelfIntersections" [0] "float subsurfaceIor" [1] "color subsurfacePostTint" [1 1 1] "float subsurfaceDiffuseSwitch" [1] "int subsurfaceDoubleSided" [0] "float subsurfaceTransmitGain" [0] "int considerBackside" [1] "int continuationRayMode" [0] 
+	"int maxContinuationHits" [2] "float followTopology" [0] "string subsurfaceSubset" [""] "float singlescatterGain" [0] "color singlescatterColor" [0.83 0.791 0.753] "float singlescatterMfp" [10] "color singlescatterMfpColor" [0.851 0.557 0.395] "float singlescatterDirectionality" [0] "float singlescatterIor" [1.3] 
+	"float singlescatterBlur" [0] "float singlescatterDirectGain" [0] "color singlescatterDirectGainTint" [1 1 1] "int singlescatterDoubleSided" [0] "int singlescatterConsiderBackside" [1] "int singlescatterContinuationRayMode" [0] "int singlescatterMaxContinuationHits" [2] "int singlescatterDirectGainMode" [0] "string singlescatterSubset" [""] "color irradianceTint" [1 1 1] "float irradianceRoughness" [0] 
+	"float unitLength" [0.1] "float refractionGain" [0] "float reflectionGain" [0] "color refractionColor" [1 1 1] "float glassRoughness" [0.1] "float glassIor" [1.5] "int thinGlass" [0] "int ignoreAccumOpacity" [0] "color ssAlbedo" [0 0 0] 
+	"color extinction" [0 0 0] "float g" [0] "int multiScatter" [0] "int enableOverlappingVolumes" [0] "float glowGain" [0] "color glowColor" [1 1 1] "normal bumpNormal" [0 0 0] 
+	"color shadowColor" [0 0 0] "int shadowMode" [0] "float presence" [1] "int presenceCached" [1] "__instanceid" ["floorShader_0"]
+]]></Payload>
+        <Payload Id="house:PxrSurface3SG" Label="" Source="1" Content="1"><![CDATA[##RenderMan RIB
+version 3.04
+Displacement "null" 
+Bxdf "PxrSurface" "house_PxrSurface3" "float diffuseGain" [1] "color diffuseColor" [0.876 0.185712 0.185712] "float diffuseRoughness" [0.85] "float diffuseExponent" [1] "normal diffuseBumpNormal" [0 0 0] "int diffuseDoubleSided" [0] "int diffuseBackUseDiffuseColor" [1] "color diffuseBackColor" [0.18 0.18 0.18] 
+	"float diffuseTransmitGain" [0] "color diffuseTransmitColor" [0.18 0.18 0.18] "int specularFresnelMode" [0] "color specularFaceColor" [0 0 0] "color specularEdgeColor" [0 0 0] "float specularFresnelShape" [0] "color specularIor" [1.5 1.5 1.5] 
+	"color specularExtinctionCoeff" [0 0 0] "float specularRoughness" [0] "int specularModelType" [0] "float specularAnisotropy" [0] "vector specularAnisotropyDirection" [0 0 0] "normal specularBumpNormal" [0 0 0] "int specularDoubleSided" [0] 
+	"int roughSpecularFresnelMode" [0] "color roughSpecularFaceColor" [0 0 0] "color roughSpecularEdgeColor" [0 0 0] "float roughSpecularFresnelShape" [5] "color roughSpecularIor" [1.5 1.5 1.5] "color roughSpecularExtinctionCoeff" [0 0 0] 
+	"float roughSpecularRoughness" [0.6] "int roughSpecularModelType" [0] "float roughSpecularAnisotropy" [0] "vector roughSpecularAnisotropyDirection" [0 0 0] "normal roughSpecularBumpNormal" [0 0 0] "int roughSpecularDoubleSided" [0] "int clearcoatFresnelMode" [0] "color clearcoatFaceColor" [0 0 0] 
+	"color clearcoatEdgeColor" [0 0 0] "float clearcoatFresnelShape" [5] "color clearcoatIor" [1.5 1.5 1.5] "color clearcoatExtinctionCoeff" [0 0 0] "float clearcoatThickness" [0] "color clearcoatAbsorptionTint" [0 0 0] 
+	"float clearcoatRoughness" [0] "int clearcoatModelType" [0] "float clearcoatAnisotropy" [0] "vector clearcoatAnisotropyDirection" [0 0 0] "normal clearcoatBumpNormal" [0 0 0] "int clearcoatDoubleSided" [0] "float specularEnergyCompensation" [0] "float clearcoatEnergyCompensation" [0] "float iridescenceFaceGain" [0] 
+	"float iridescenceEdgeGain" [0] "float iridescenceFresnelShape" [5] "int iridescenceMode" [0] "color iridescencePrimaryColor" [1 0 0] "color iridescenceSecondaryColor" [0 0 1] "float iridescenceRoughness" [0.2] "float iridescenceCurve" [1] "float iridescenceScale" [1] "int iridescenceFlip" [0] 
+	"float iridescenceThickness" [800] "int iridescenceDoubleSided" [0] "float fuzzGain" [0] "color fuzzColor" [1 1 1] "float fuzzConeAngle" [8] "normal fuzzBumpNormal" [0 0 0] "int fuzzDoubleSided" [0] "int subsurfaceType" [0] "float subsurfaceGain" [0] "color subsurfaceColor" [0.83 0.791 0.753] 
+	"float subsurfaceDmfp" [10] "color subsurfaceDmfpColor" [0.851 0.557 0.395] "float shortSubsurfaceGain" [0] "color shortSubsurfaceColor" [0.9 0.9 0.9] "float shortSubsurfaceDmfp" [5] "float longSubsurfaceGain" [0] "color longSubsurfaceColor" [0.8 0 0] 
+	"float longSubsurfaceDmfp" [20] "float subsurfaceDirectionality" [0] "float subsurfaceBleed" [0] "float subsurfaceDiffuseBlend" [0] "int subsurfaceResolveSelfIntersections" [0] "float subsurfaceIor" [1] "color subsurfacePostTint" [1 1 1] "float subsurfaceDiffuseSwitch" [1] "int subsurfaceDoubleSided" [0] "float subsurfaceTransmitGain" [0] "int considerBackside" [1] "int continuationRayMode" [0] 
+	"int maxContinuationHits" [2] "float followTopology" [0] "string subsurfaceSubset" [""] "float singlescatterGain" [0] "color singlescatterColor" [0.83 0.791 0.753] "float singlescatterMfp" [10] "color singlescatterMfpColor" [0.851 0.557 0.395] "float singlescatterDirectionality" [0] "float singlescatterIor" [1.3] 
+	"float singlescatterBlur" [0] "float singlescatterDirectGain" [0] "color singlescatterDirectGainTint" [1 1 1] "int singlescatterDoubleSided" [0] "int singlescatterConsiderBackside" [1] "int singlescatterContinuationRayMode" [0] "int singlescatterMaxContinuationHits" [2] "int singlescatterDirectGainMode" [0] "string singlescatterSubset" [""] "color irradianceTint" [1 1 1] "float irradianceRoughness" [0] 
+	"float unitLength" [0.1] "float refractionGain" [0] "float reflectionGain" [0] "color refractionColor" [1 1 1] "float glassRoughness" [0.1] "float glassIor" [1.5] "int thinGlass" [0] "int ignoreAccumOpacity" [0] "color ssAlbedo" [0 0 0] 
+	"color extinction" [0 0 0] "float g" [0] "int multiScatter" [0] "int enableOverlappingVolumes" [0] "float glowGain" [0] "color glowColor" [1 1 1] "normal bumpNormal" [0 0 0] 
+	"color shadowColor" [0 0 0] "int shadowMode" [0] "float presence" [1] "int presenceCached" [1] "__instanceid" ["house_PxrSurface3_0"]
+]]></Payload>
+    </InjectablePayloads>
+    <TightBindings>
+        <Binding Key="set_GRP/ground_GRP/ground_GEO/ground_GEOShape" PayloadId="initialShadingGroup"/>
+        <Binding Key="house:house/house:stones1/house:stone_6/house:stone_Shape6" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="set_GRP/fence_left_GRP/pCube10/pCubeShape10" PayloadId="PxrSurface3SG"/>
+        <Binding Key="set_GRP/fence_left_GRP/pCube12/pCubeShape12" PayloadId="PxrSurface3SG"/>
+        <Binding Key="set_GRP/fence_left_GRP/pCube9/pCubeShape9" PayloadId="PxrSurface3SG"/>
+        <Binding Key="house:house/house:stones2/house:stone_4/house:stone_Shape4" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="set_GRP/bushes_GEO/pSphere15/pSphereShape15" PayloadId="PxrSurface2SG"/>
+        <Binding Key="set_GRP/fence_left_GRP/pCube8/pCubeShape8" PayloadId="PxrSurface3SG"/>
+        <Binding Key="set_GRP/bushes_GEO/pSphere4/pSphereShape4" PayloadId="PxrSurface2SG"/>
+        <Binding Key="set_GRP/fence_right_GRP/pCube9/pCubeShape9" PayloadId="PxrSurface3SG"/>
+        <Binding Key="set_GRP/fence_left_GRP/pCube7/pCubeShape7" PayloadId="PxrSurface3SG"/>
+        <Binding Key="house:house/house:stones/house:stone_3/house:stone_Shape3" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones1/house:stone_4/house:stone_Shape4" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones2/house:stone_5/house:stone_Shape5" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="set_GRP/fence_left_GRP/pCube6/pCubeShape6" PayloadId="PxrSurface3SG"/>
+        <Binding Key="set_GRP/fence_right_GRP/pCube10/pCubeShape10" PayloadId="PxrSurface3SG"/>
+        <Binding Key="set_GRP/fence_right_GRP/pCube8/pCubeShape8" PayloadId="PxrSurface3SG"/>
+        <Binding Key="house:house/house:stones3/house:stone_7/house:stone_Shape7" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="set_GRP/bushes_GEO/pSphere2/pSphereShape2" PayloadId="PxrSurface2SG"/>
+        <Binding Key="set_GRP/fence_right_GRP/pCube7/pCubeShape7" PayloadId="PxrSurface3SG"/>
+        <Binding Key="house:house/house:stones3/house:stone_9/house:stone_Shape9" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="set_GRP/fence_right_GRP/pCube11/pCubeShape11" PayloadId="PxrSurface3SG"/>
+        <Binding Key="set_GRP/fence_right_GRP/pCube6/pCubeShape6" PayloadId="PxrSurface3SG"/>
+        <Binding Key="set_GRP/fence_right_GRP/pCube5/pCubeShape5" PayloadId="PxrSurface3SG"/>
+        <Binding Key="house:house/house:stones1/house:stone_7/house:stone_Shape7" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones2/house:stone_6/house:stone_Shape6" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones3/house:stone_10/house:stone_Shape10" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="set_GRP/fence_right_GRP/pCube4/pCubeShape4" PayloadId="PxrSurface3SG"/>
+        <Binding Key="house:house/house:stones2/house:stone_10/house:stone_Shape10" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="set_GRP/bushes_GEO/pSphere10/pSphereShape10" PayloadId="PxrSurface2SG"/>
+        <Binding Key="set_GRP/fence_right_GRP/pCube13/pCubeShape13" PayloadId="PxrSurface3SG"/>
+        <Binding Key="set_GRP/tree_GRP/tree_GEO/tree_GEOShape" PayloadId="initialShadingGroup"/>
+        <Binding Key="set_GRP/bushes_GEO/pSphere13/pSphereShape13" PayloadId="PxrSurface2SG"/>
+        <Binding Key="set_GRP/bushes_GEO/pSphere12/pSphereShape12" PayloadId="PxrSurface2SG"/>
+        <Binding Key="set_GRP/bushes_GEO/pSphere17/pSphereShape17" PayloadId="PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones3/house:stone_3/house:stone_Shape3" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="set_GRP/bushes_GEO/pSphere3/pSphereShape3" PayloadId="PxrSurface2SG"/>
+        <Binding Key="set_GRP/bushes_GEO/pSphere9/pSphereShape9" PayloadId="PxrSurface2SG"/>
+        <Binding Key="set_GRP/bushes_GEO/pSphere11/pSphereShape11" PayloadId="PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones1/house:stone_5/house:stone_Shape5" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="set_GRP/bushes_GEO/pSphere16/pSphereShape16" PayloadId="PxrSurface2SG"/>
+        <Binding Key="set_GRP/bushes_GEO/pSphere6/pSphereShape6" PayloadId="PxrSurface2SG"/>
+        <Binding Key="set_GRP/bushes_GEO/pSphere5/pSphereShape5" PayloadId="PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones3/house:stone_0/house:stone_Shape0" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones3/house:stone_1/house:stone_Shape1" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones3/house:stone_2/house:stone_Shape2" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones2/house:stone_9/house:stone_Shape9" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones3/house:stone_4/house:stone_Shape4" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones3/house:stone_5/house:stone_Shape5" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones1/house:stone_8/house:stone_Shape8" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones3/house:stone_6/house:stone_Shape6" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones3/house:stone_8/house:stone_Shape8" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones2/house:stone_7/house:stone_Shape7" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones3/house:stone_11/house:stone_Shape11" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones2/house:stone_0/house:stone_Shape0" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones2/house:stone_1/house:stone_Shape1" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones2/house:stone_2/house:stone_Shape2" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones2/house:stone_3/house:stone_Shape3" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones2/house:stone_8/house:stone_Shape8" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones2/house:stone_11/house:stone_Shape11" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones1/house:stone_0/house:stone_Shape0" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones1/house:stone_1/house:stone_Shape1" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones/house:stone_0/house:stone_Shape0" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones1/house:stone_3/house:stone_Shape3" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones1/house:stone_2/house:stone_Shape2" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones1/house:stone_9/house:stone_Shape9" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones1/house:stone_10/house:stone_Shape10" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones1/house:stone_11/house:stone_Shape11" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones/house:stone_1/house:stone_Shape1" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones/house:stone_2/house:stone_Shape2" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones/house:stone_4/house:stone_Shape4" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones/house:stone_5/house:stone_Shape5" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones/house:stone_6/house:stone_Shape6" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones/house:stone_7/house:stone_Shape7" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones/house:stone_8/house:stone_Shape8" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones/house:stone_9/house:stone_Shape9" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones/house:stone_10/house:stone_Shape10" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:stones/house:stone_11/house:stone_Shape11" PayloadId="house:PxrSurface2SG"/>
+        <Binding Key="house:house/house:houseRoof/house:houseRoofShape" PayloadId="house:PxrSurface3SG"/>
+        <Binding Key="house:house/house:houseBase/house:houseBaseShape" PayloadId="house:PxrSurface1SG"/>
+        <Binding Key="pPlane1/pPlaneShape1" PayloadId="PxrSurface1SG"/>
+    </TightBindings>
+</RenderManLookFile>
